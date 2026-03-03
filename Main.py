@@ -12,7 +12,7 @@ arquivo = st.file_uploader("Suba aqui o Excel ou PDF com os dados brutos", type=
 if arquivo:
     st.info("Processando dados com inteligência artificial...")
     # Aqui o código envia para o Gemini com o prompt que treinamos
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.0-flash')
     response = model.generate_content(f"Atue como contador sênior. Transforme estes dados em uma tabela contábil e gere o código CSV de importação: {arquivo.name}")
     
     st.success("Processamento Concluído!")
