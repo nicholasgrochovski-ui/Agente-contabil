@@ -16,7 +16,7 @@ if arquivo:
     conteudo = arquivo.read().decode("utf-8", errors="ignore")
     
     # Usando a versão estável para evitar o erro "Permission Denied"
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-1.0-pro')
     
     # O comando com a "Memória de Contador Sênior" que discutimos
     prompt = f"Atue como contador sênior. Analise o conteúdo deste documento e transforme em uma tabela contábil organizada para Imposto de Renda. Gere também o código CSV para importação. Conteúdo: {conteudo}"
