@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Configuração da sua chave (Você vai colar a chave que pegou no passo anterior aqui)
-genai.configure(api_key="AIzaSyAhiF4ga6DtObnv4pzlA7_z0yIvg6bnNuY")
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 st.title("Agente Contábil IA - Nicholas")
 st.subheader("Transforme meses de trabalho em segundos")
